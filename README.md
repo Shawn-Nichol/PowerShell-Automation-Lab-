@@ -4,7 +4,7 @@ This repository contains PowerShell learning exercises, automation projects, and
 
 ## Purpose
 
-The goal is to develop practical PowerShell skills through hands-on exploration, documentation, and project-based learning.
+A collection of PowerShell learning exercises, scripts, automation projects, and system administration tools.4 5This repository documents my exploration of PowerShell with a focus on understanding objects, automation, troubleshooting, and practical systems administration.
 
 Topics include:
 
@@ -24,10 +24,6 @@ Projects/   - Complete solutions and tools
 Scripts/    - Reusable utilities
 ```
 
-## Notable Projects
-
-Projects will be added as they are completed.
-
 ## Learning Philosophy
 
 Rather than memorizing commands, this repository focuses on:
@@ -37,10 +33,5 @@ Rather than memorizing commands, this repository focuses on:
 - Building practical automation
 - Applying skills to real-world scenarios
 
-## Useful Pattern
-
-```powershell
-<command> | Get-Member
-```
 
 Understanding the objects returned by a command is often more valuable than memorizing the command itself.
