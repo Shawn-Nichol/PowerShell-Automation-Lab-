@@ -1,7 +1,10 @@
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/07d33edc-f088-430d-8a54-4c77b7605cf3" />
+<img width="1536" height="768" alt="image" src="https://github.com/user-attachments/assets/07d33edc-f088-430d-8a54-4c77b7605cf3" />
 
-
-# Get-ComputerInfo
+![PowerShell](https://img.shields.io/badge/PowerShell-7%2B-5391FE?logo=powershell&logoColor=white)
+![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-green)
+![Category](https://img.shields.io/badge/Category-System%20Enumeration-blue)
+![Security](https://img.shields.io/badge/Security-Host%20Investigation-red)
+![Concept](https://img.shields.io/badge/Concept-Objects-orange)
 
 ## 1. Executive Summary
 
