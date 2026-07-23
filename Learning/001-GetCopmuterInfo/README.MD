@@ -1,146 +1,80 @@
 # Get-ComputerInfo
 
-## Executive Summary
+## 1. Executive Summary
 
-- `Get-ComputerInfo` retrieves detailed information about a Windows computer, including operating system, hardware, BIOS, and security configuration details.
-- The cmdlet returns a PowerShell object containing hundreds of properties that can be filtered and examined.
-- Property prefixes help categorize information:
-  - `Windows*` = Windows product information
-  - `Os*` = Operating system details
-  - `Cs*` = Computer system and hardware information
-  - `Bios*` = BIOS/UEFI information
-- `Select-Object` can be used to display only relevant properties.
-- `Get-Member` is the preferred method for discovering available properties and understanding returned objects.
+`Get-ComputerInfo` is a PowerShell cmdlet that provides detailed information about a Windows system, including operating system details, hardware inventory, BIOS information, and security-related configuration. During this exercise, I learned how PowerShell organizes large amounts of system information into a single object and how object exploration techniques can be used to discover useful properties without relying on memorization.
 
----
+### Highlights
 
-## Objective
-
-Explore the `Get-ComputerInfo` cmdlet to understand how PowerShell exposes operating system and hardware information through objects.
+- Learned the difference between Windows product information and operating system version information.
+- Discovered how PowerShell organizes information using property prefixes such as `Windows*`, `Os*`, `Cs*`, and `Bios*`.
+- Used `Select-Object` to filter large datasets into meaningful information.
+- Used `Get-Member` to explore an unfamiliar object and discover available properties.
+- Corrected the misconception that operating system build numbers represent hardware models.
 
 ---
 
-## Command Syntax
+## 2. Learning Objective
 
-```powershell
-Get-ComputerInfo
-```
+The goal of this exercise was to understand how PowerShell exposes system information and to become comfortable navigating large PowerShell objects.
 
----
+Specific objectives included:
 
-## Description
-
-`Get-ComputerInfo` gathers information from multiple areas of Windows and returns it as a single PowerShell object.
-
-Information available includes:
-
-- Operating System Details
-- Computer Hardware Information
-- BIOS/UEFI Information
-- Security Configuration
-- Device Guard Status
-- Memory Configuration
-- Processor Information
-- Time Zone Settings
-
-Unlike traditional command-line tools that return text, `Get-ComputerInfo` returns structured data that can be filtered, exported, and manipulated.
+- Understanding the output of `Get-ComputerInfo`
+- Identifying useful operating system properties
+- Learning how to locate hardware information
+- Practicing object discovery techniques
+- Understanding the difference between Windows versions, operating system versions, and hardware models
 
 ---
 
-## Key Properties
+## 3. Cybersecurity Applications
 
-### Windows Properties
+Although `Get-ComputerInfo` appears to be a simple inventory command, it has several cybersecurity applications.
 
-Properties related to the Windows product and feature release.
+### Host Enumeration
 
-```text
-WindowsProductName
-WindowsVersion
-```
+Security analysts often need to quickly understand the system they are investigating, including:
 
-Example:
+- Computer name
+- Operating system version
+- Build number
+- Hardware platform
 
-```text
-WindowsProductName : Windows 11 Enterprise
-WindowsVersion     : 24H2
-```
+### Vulnerability Assessment
 
----
+Operating system versions and build numbers help identify:
 
-### Operating System Properties
+- Whether a system is fully patched
+- Whether known vulnerabilities apply
+- Whether systems meet organizational security requirements
 
-Technical details about the operating system.
+### Asset Inventory
 
-```text
-OsVersion
-OsBuildNumber
-OsArchitecture
-```
+Security programs depend on accurate inventory information to identify:
 
-Example:
+- Unsupported operating systems
+- Aging hardware
+- Unmanaged devices
 
-```text
-OsVersion      : 10.0.26100
-OsBuildNumber  : 26100
-OsArchitecture : 64-bit
-```
+### Security Baseline Validation
+
+Information returned by `Get-ComputerInfo` can be used to verify system configurations and establish known-good baselines.
 
 ---
 
-### Computer System Properties
+## 4. Security Scenario
 
-Hardware and system inventory information.
+A workstation is suspected of running an outdated version of Windows after a critical vulnerability is announced.
 
-```text
-CsName
-CsManufacturer
-CsModel
-CsTotalPhysicalMemory
-```
+Before determining risk, an analyst must identify:
 
-Common uses include asset management and inventory reporting.
+- The operating system edition
+- The Windows feature release
+- The operating system build number
+- The device being investigated
 
----
-
-### BIOS Properties
-
-Firmware information.
-
-```text
-BiosManufacturer
-BiosVersion
-```
-
-These properties can be useful when verifying firmware versions or troubleshooting hardware issues.
-
----
-
-### Security Properties
-
-Information related to Windows security features.
-
-```text
-DeviceGuardSecurityServicesRunning
-DeviceGuardSmartStatus
-```
-
-Useful for understanding security capabilities and configurations.
-
----
-
-## Examples
-
-### Display All Computer Information
-
-```powershell
-Get-ComputerInfo
-```
-
-Displays all available properties.
-
----
-
-### Display Selected Operating System Properties
+Using the following command:
 
 ```powershell
 Get-ComputerInfo |
@@ -148,165 +82,63 @@ Select-Object WindowsProductName,
               WindowsVersion,
               OsVersion,
               OsBuildNumber,
-              OsArchitecture
+              CsName
 ```
 
-Useful when inventorying systems or verifying operating system versions.
+an analyst can quickly gather the information needed to compare the system against published vulnerability information and determine whether remediation is necessary.
 
 ---
 
-### Display Hardware Information
+## 5. Key Takeaways
 
-```powershell
-Get-ComputerInfo |
-Select-Object CsName,
-              CsManufacturer,
-              CsModel,
-              CsTotalPhysicalMemory
-```
+- PowerShell returns structured objects rather than plain text.
+- Property prefixes provide useful context about the type of information being displayed.
+- `Select-Object` is essential for reducing clutter and focusing on relevant data.
+- `Get-Member` is one of the most valuable commands for exploring unfamiliar PowerShell objects.
+- Build numbers identify operating system builds, not hardware models.
 
-Useful for gathering hardware inventory information.
+### Property Prefixes
 
----
-
-### Discover Available Properties
-
-```powershell
-Get-ComputerInfo | Get-Member
-```
-
-Displays all available properties and methods associated with the returned object.
-
----
-
-### Find All Computer System Properties
-
-```powershell
-Get-ComputerInfo | Select-Object Cs*
-```
-
-Displays only hardware-related information.
-
----
-
-## Key Learnings
-
-### Understanding Property Prefixes
-
-One of the most useful discoveries was that many properties are grouped using common prefixes.
-
-| Prefix | Purpose |
+| Prefix | Meaning |
 |----------|----------|
 | Windows* | Windows product information |
-| Os* | Operating system details |
-| Cs* | Computer system and hardware details |
+| Os* | Operating system information |
+| Cs* | Computer system and hardware information |
 | Bios* | BIOS and firmware information |
 | DeviceGuard* | Security-related information |
 
-Recognizing these prefixes makes it easier to discover information without scrolling through hundreds of properties.
-
 ---
 
-### Windows Version vs OS Version
+## 6. Interesting Discoveries
 
-Initially there was confusion between Windows version information and operating system version information.
+### Build Numbers Are Not Hardware Models
 
-The following properties represent different concepts:
+Initially, I assumed that `OsVersion` and `OsBuildNumber` represented some form of system model information.
+
+After examining the properties more closely, I learned:
 
 | Property | Meaning |
 |-----------|----------|
-| WindowsProductName | Product name of Windows |
-| WindowsVersion | Feature update version (e.g., 24H2) |
+| WindowsVersion | Windows feature release |
 | OsVersion | Technical operating system version |
-| OsBuildNumber | Specific build number |
-| OsArchitecture | Operating system architecture |
+| OsBuildNumber | Operating system build identifier |
+| CsModel | Hardware model |
 
-Example:
+This distinction is important because operating system information and hardware information are exposed through separate property groups.
 
-```text
-WindowsProductName : Windows 11 Enterprise
-WindowsVersion     : 24H2
-OsVersion          : 10.0.26100
-OsBuildNumber      : 26100
-OsArchitecture     : 64-bit
-```
+### Hardware Information Lives Under `Cs*`
 
----
-
-### Build Numbers Matter
-
-While Windows versions are useful for identifying releases, the build number provides a more precise identification of the installed operating system.
-
-Build numbers are commonly used when:
-
-- Troubleshooting issues
-- Verifying updates
-- Confirming software compatibility
-- Identifying known bugs and fixes
-
----
-
-## Real-World Use Cases
-
-### System Inventory
-
-Gather information for asset tracking and documentation.
+I expected memory information to appear under operating system-related properties. Instead, memory is exposed through:
 
 ```powershell
-Get-ComputerInfo |
-Select-Object CsName,
-              CsManufacturer,
-              CsModel,
-              WindowsProductName,
-              OsBuildNumber
+CsTotalPhysicalMemory
 ```
 
----
+This reinforced the idea that PowerShell separates hardware information from operating system information.
 
-### Upgrade Planning
+### Prefixes Simplify Discovery
 
-Identify operating system versions and build numbers before rolling out updates.
-
----
-
-### Troubleshooting
-
-Use build numbers, BIOS versions, and hardware information when diagnosing problems.
-
----
-
-### Compliance Auditing
-
-Collect operating system and security-related information for reporting and validation purposes.
-
----
-
-## Common Mistakes
-
-### Mistake #1: Treating Build Numbers as Hardware Models
-
-Incorrect:
-
-```text
-OsBuildNumber = Hardware Model
-```
-
-Correct:
-
-```text
-OsBuildNumber = Operating System Build
-CsModel       = Hardware Model
-```
-
-Hardware model information is located in `CsModel`.
-
----
-
-### Mistake #2: Scrolling Through All Properties
-
-The full output contains hundreds of properties.
-
-Instead, filter information using prefixes:
+Rather than scrolling through hundreds of properties, it is more efficient to filter output using property prefixes:
 
 ```powershell
 Get-ComputerInfo | Select-Object Os*
@@ -318,56 +150,4 @@ or
 Get-ComputerInfo | Select-Object Cs*
 ```
 
-This makes information easier to discover and understand.
-
----
-
-### Mistake #3: Ignoring Object Exploration
-
-Many users focus on memorizing commands instead of understanding what objects contain.
-
-A better approach is:
-
-```powershell
-Get-ComputerInfo | Get-Member
-```
-
-This reveals the structure of the returned object.
-
----
-
-## Related Commands
-
-### Get-Member
-
-Explore available properties and methods.
-
-```powershell
-Get-ComputerInfo | Get-Member
-```
-
-### Select-Object
-
-Display only relevant properties.
-
-```powershell
-Get-ComputerInfo | Select-Object Os*
-```
-
-### Get-CimInstance
-
-Retrieve detailed information from specific Windows management classes.
-
-```powershell
-Get-CimInstance Win32_ComputerSystem
-```
-
----
-
-## Reflection
-
-This exercise reinforced one of the most important PowerShell concepts: commands return objects rather than text.
-
-The most valuable lesson was learning to explore and understand object properties instead of attempting to memorize them. By identifying common property prefixes and using tools such as `Get-Member`, it becomes much easier to discover useful information and build future automation scripts.
-
-Understanding the distinction between product information (`Windows*`), operating system details (`Os*`), hardware information (`Cs*`), and firmware information (`Bios*`) provides a strong foundation for future PowerShell exploration and system administration tasks.
+This makes large objects much easier to explore and understand.
