@@ -43,19 +43,24 @@ Get-Command
 ```
 <img width="872" height="581" alt="image" src="https://github.com/user-attachments/assets/6989b295-dea5-4ebf-be2c-fe8f5226e22a" />
 
+
 ```powershell
 Get-Command *process*
 ```
 <img width="930" height="386" alt="image" src="https://github.com/user-attachments/assets/1b3c5ade-0358-4047-bebc-b64bf7811d91" />
 
+
 ```powershell
 Get-Command *service*
 ```
+<img width="932" height="765" alt="image" src="https://github.com/user-attachments/assets/e4d00e6e-6acb-48f0-a113-6c4063bdf1fa" />
+
 
 ```powershell
 Get-Help Get-Service -Examples
 ```
 <img width="941" height="499" alt="image" src="https://github.com/user-attachments/assets/dba2cb8a-808d-42a5-a288-2cb82a2f9f9e" />
+
 
 
 ```powershell
