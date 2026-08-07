@@ -6,7 +6,6 @@
 ![Concept](https://img.shields.io/badge/Concept-Help%20System-orange)
 
 
-images/get-command-discovery-hero.png
 
 ## 📌 Executive Summary
 
