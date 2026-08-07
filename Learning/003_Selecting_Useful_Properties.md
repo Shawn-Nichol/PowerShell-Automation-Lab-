@@ -1,30 +1,27 @@
 # 🛡️ Selecting Useful Properties
 
----
-[![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B%20%7C%207%2B-5391FE?style=flat&logo=powershell&logoColor=white)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
-[![Category](https://img.shields.io/badge/Category-Pipeline%20%26%20Properties-blue?style=flat)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
-[![Focus](https://img.shields.io/badge/Focus-Select--Object-0078D4?style=flat&logo=powershell)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
-[![Application](https://img.shields.io/badge/Application-Cybersecurity%20%26%20Incident%20Response-red?style=flat&logo=shield)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
-[![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-brightgreen?style=flat)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![PowerShell](https://img.shields.io/badge/PowerShell-7%2B-5391FE?logo=powershell&logoColor=white)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-green)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![Category](https://img.shields.io/badge/Category-Pipeline%20%26%20Properties-blue)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![Security](https://img.shields.io/badge/Security-Incident%20Response-red)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![Concept](https://img.shields.io/badge/Concept-Select--Object-orange)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+
 
 
 ## 📌 Executive Summary
 
 This session focused on using `Select-Object` to display only the properties relevant to an investigation or troubleshooting task. Instead of accepting PowerShell's default view, I learned how to customize output to highlight specific information.
 
----
 
 ## 🎯 Learning Objective
 
 Learn how to use `Select-Object` to extract useful information from PowerShell objects.
 
----
 
 ## 🔐 Cybersecurity Application
 
 Analysts often need only a small subset of available data. Selecting specific properties makes process investigations, service audits, and incident response activities more efficient.
 
----
 
 ## ✅ Key Takeaways
 
@@ -33,7 +30,6 @@ Analysts often need only a small subset of available data. Selecting specific pr
 - Choosing relevant properties improves readability.
 - Process and service data can be tailored for investigations.
 
----
 
 ## 💻 PowerShell Commands
 
@@ -70,7 +66,6 @@ Sort-Object WorkingSet64 -Descending
 ```
 <img width="377" height="321" alt="image" src="https://github.com/user-attachments/assets/33042fc7-3a3e-42e3-a29c-99cf7dfcd013" />
 
----
 
 ## 🧠 What I Learned
 
