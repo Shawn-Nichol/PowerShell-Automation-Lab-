@@ -11,13 +11,11 @@
 
 This lab introduced PowerShell command discovery and the built-in help system. I learned how to locate relevant commands using wildcards, read documentation using Get-Help, and view running processes. These skills form the foundation for future cybersecurity investigations.
 
----
 
 ## 🎯 Learning Objective
 
 Learn how to discover PowerShell commands and understand their usage through PowerShell's built-in help system.
 
----
 
 ## 🚀 Key Highlights
 
@@ -27,13 +25,11 @@ Learn how to discover PowerShell commands and understand their usage through Pow
 - Viewed running processes with `Get-Process`.
 - Connected process enumeration to cybersecurity investigations.
 
----
 
 ## 🔐 Cybersecurity Application
 
 Cybersecurity analysts regularly encounter unfamiliar systems. The ability to discover commands and read built-in documentation allows analysts to investigate processes, services, logs, and system settings efficiently without relying on memorization.
 
----
 
 ## 💻 PowerShell Commands
 
@@ -68,7 +64,6 @@ Select-Object -First 10
 ```
 <img width="846" height="300" alt="image" src="https://github.com/user-attachments/assets/b13e4574-e982-474e-8f54-7fdb8779b9ae" />
 
----
 
 ## ✅ Key Takeaways
 
