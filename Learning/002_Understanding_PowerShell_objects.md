@@ -6,21 +6,16 @@
 [![Security](https://img.shields.io/badge/Security-Cybersecurity-red)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
 [![Concept](https://img.shields.io/badge/Concept-Properties%20and%20Values-orange)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
 
-images/powershell-objects-hero.png
-
----
 
 ## 📌 Executive Summary
 
 This session introduced PowerShell objects and object properties. I learned that PowerShell commands return structured data rather than plain text and that object properties can be inspected and selected for analysis.
 
----
 
 ## 🎯 Learning Objective
 
 Understand how PowerShell stores information in objects and how to access useful properties.
 
----
 
 ## 🚀 Key Highlights
 
@@ -29,7 +24,6 @@ Understand how PowerShell stores information in objects and how to access useful
 - Used `Select-Object` to display custom properties.
 - Viewed process data through selected properties.
 
----
 
 ## ✅ Key Takeaways
 
