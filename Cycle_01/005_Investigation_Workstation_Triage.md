@@ -1,6 +1,11 @@
 # 🛡️ Workstation Triage Investigation
 
-images/workstation-triage-investigation.png
+[![PowerShell](https://img.shields.io/badge/PowerShell-7%2B-5391FE?logo=powershell&logoColor=white)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-green)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![Category](https://img.shields.io/badge/Category-System%20Triage-blue)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![Security](https://img.shields.io/badge/Security-Incident%20Response-red)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![Concept](https://img.shields.io/badge/Concept-Investigation-orange)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+
 
 ## 📌 Executive Summary
 
