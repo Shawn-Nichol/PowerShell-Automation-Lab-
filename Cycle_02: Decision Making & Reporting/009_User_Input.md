@@ -1,5 +1,9 @@
 # 🛡️ User Input with Read-Host
-
+[![PowerShell](https://img.shields.io/badge/PowerShell-7%2B-5391FE?logo=powershell&logoColor=white)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-green)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![Category](https://img.shields.io/badge/Category-Decision%20Making%20%26%20Reporting-blue)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![Security](https://img.shields.io/badge/Security-Interactive%20Triage-red)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![Concept](https://img.shields.io/badge/Concept-User%20Input-orange)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
 
 ## 📌 Executive Summary
 
