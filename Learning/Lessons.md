@@ -216,27 +216,3 @@
 
 ---
 
-# 🏆 Portfolio Projects
-
-By the end of the roadmap, you will have completed:
-
-1. Workstation Triage Investigation
-2. Service Health Audit
-3. Process Inventory Audit
-4. Suspicious Files Investigation
-5. Security Evidence Report
-6. Security Audit Function
-7. Host Baseline Assessment
-8. Failed Logon Investigation
-9. Network Triage Investigation
-10. Privilege Audit
-11. Registry Persistence Hunt
-12. Service Security Review
-13. Scheduled Task Hunt
-14. Process Forensics Investigation
-15. Multi-Host Investigation
-16. Custom Detection Tool
-17. Incident Response Toolkit
-18. Threat Hunting Toolkit
-19. SOC Investigation Framework
-20. Capstone Security Assessment
