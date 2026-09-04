@@ -56,8 +56,8 @@ Through this project I am working toward the ability to:
 
 ✅ Arrays  
 ✅ `ForEach`  
-⬜ `for` Loops  
-⬜ Collections & Data Processing  
+✅ `for` Loops  
+✅ Collections & Data Processing  
 ⬜ Challenge: Process Inventory Audit  
 
 ---
