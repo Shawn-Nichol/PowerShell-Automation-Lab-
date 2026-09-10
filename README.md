@@ -58,7 +58,7 @@ Through this project I am working toward the ability to:
 ✅ `ForEach`  
 ✅ `for` Loops  
 ✅ Collections & Data Processing  
-⬜ Challenge: Process Inventory Audit  
+✅ Challenge: Process Inventory Audit  
 
 ---
 
@@ -66,7 +66,7 @@ Through this project I am working toward the ability to:
 
 ### 🛡️ Cycle 4: Filesystem Investigation
 
-⬜ Files and Folders  
+✅ Files and Folders  
 ⬜ Finding Files  
 ⬜ File Attributes  
 ⬜ File Filtering  
@@ -226,11 +226,3 @@ This repository will ultimately contain practical cybersecurity projects includi
 - ⬜ Threat Hunting Toolkit
 - ⬜ SOC Investigation Framework
 - ⬜ Capstone Security Assessment
-
----
-
-# 📈 Current Progress
-
-**Completed Lessons:** 12  
-**Current Lesson:** 13 - `for` Loops  
-**Current Focus:** Large Dataset Analysis
