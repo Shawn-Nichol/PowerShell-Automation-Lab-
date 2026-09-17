@@ -67,10 +67,10 @@ Through this project I am working toward the ability to:
 ### 🛡️ Cycle 4: Filesystem Investigation
 
 ✅ Files and Folders  
-⬜ Finding Files  
-⬜ File Attributes  
-⬜ File Filtering  
-⬜ Challenge: Suspicious Files Review  
+✅ Finding Files  
+✅ File Attributes  
+✅ File Filtering  
+✅ Challenge: Suspicious Files Review  
 
 ### 🛡️ Cycle 5: Evidence Reporting
 
@@ -208,8 +208,8 @@ This repository will ultimately contain practical cybersecurity projects includi
 
 - ✅ Workstation Triage Investigation
 - ✅ Suspicious Service Investigation
-- ⬜ Process Inventory Audit
-- ⬜ Suspicious Files Investigation
+- ✅ Process Inventory Audit
+- ✅ Suspicious Files Investigation
 - ⬜ Security Evidence Report
 - ⬜ Security Audit Function
 - ⬜ Host Baseline Assessment
