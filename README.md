@@ -74,11 +74,11 @@ Through this project I am working toward the ability to:
 
 ### 🛡️ Cycle 5: Evidence Reporting
 
-⬜ Exporting to CSV  
-⬜ Creating Custom Objects  
-⬜ Formatting Reports  
-⬜ Evidence Collection Basics  
-⬜ Challenge: Security Evidence Report  
+✅ Exporting to CSV  
+✅ Creating Custom Objects  
+✅ Formatting Reports  
+✅ Evidence Collection Basics  
+✅ Challenge: Security Evidence Report  
 
 ### 🛡️ Cycle 6: Reusable Investigation Tools
 
