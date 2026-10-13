@@ -82,8 +82,8 @@ Through this project I am working toward the ability to:
 
 ### 🛡️ Cycle 6: Reusable Investigation Tools
 
-⬜ Functions Introduction  
-⬜ Function Parameters  
+✅ Functions Introduction  
+✅ Function Parameters  
 ⬜ Returning Data  
 ⬜ Reusable Investigation Scripts  
 ⬜ Challenge: Security Audit Function  
