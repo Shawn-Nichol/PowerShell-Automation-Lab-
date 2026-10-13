@@ -1,10 +1,6 @@
 # 🛡️ Function Parameters in PowerShell
 
-https://img.shields.io/badge/PowerShell-7%2B-5391FE?logo=powershell&logoColor=white](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
-https://img.shields.io/badge/Difficulty-Beginner-green](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
-https://img.shields.io/badge/Category-Reusable%20Investigation%20Tools-blue](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
-https://img.shields.io/badge/Security-Automation-red](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
-https://img.shields.io/badge/Concept-Function%20Parameters-orange](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
+[![PowerShell 7+](https://img.shields.io/badge/PowerShell-7%2B-5391FE?logo=powershell&logoColor=white)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-) [![Difficulty Beginner](https://img.shields.io/badge/Difficulty-Beginner-green)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-) [![Category Reusable Investigation Tools](https://img.shields.io/badge/Category-Reusable%20Investigation%20Tools-blue)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-) [![Security Automation](https://img.shields.io/badge/Security-Automation-red)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-) [![Concept Function Parameters](https://img.shields.io/badge/Concept-Function%20Parameters-orange)](https://github.com/Shawn-Nichol/PowerShell-Automation-Lab-)
 
 ## 📌 Executive Summary
 
