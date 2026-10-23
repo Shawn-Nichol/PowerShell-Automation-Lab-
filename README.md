@@ -84,13 +84,13 @@ Through this project I am working toward the ability to:
 
 ✅ Functions Introduction  
 ✅ Function Parameters  
-⬜ Returning Data  
-⬜ Reusable Investigation Scripts  
-⬜ Challenge: Security Audit Function  
+✅ Returning Data  
+✅ Reusable Investigation Scripts  
+✅ Challenge: Security Audit Function  
 
 ### 🛡️ Cycle 7: Reliable Investigations
 
-⬜ Error Handling Basics  
+✅ Error Handling Basics  
 ⬜ Try/Catch  
 ⬜ Verbose Output  
 ⬜ Logging Errors  
